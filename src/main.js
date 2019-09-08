@@ -12,4 +12,8 @@
         .typeString('I\'m <b>Nidhin Joseph</b>')
         .start();
 
+    setTimeout(function () {
+        document.querySelector('.links').style.bottom = '-0px';
+    }, 5000);
+
 })();

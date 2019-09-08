@@ -48,21 +48,29 @@ body {
     .links {
         position: fixed;
         width: 100%;
-        bottom: 0;
+        bottom: -50px;
         padding: 1em;
         text-align: center;
         display: flex;
         flex-flow: row;
         justify-content: center;
+        transition: all 0.5s;
 
         .link-wrap {
             padding: 0.5em 1em;
-            background: rgba(0, 0, 0, .1);
+            background: rgba(0, 0, 0, .2);
+            color: #fff;
             border-radius: 7px;
             margin-right: 1em;
+            transition: all 0.2s;
 
             &:last-child {
                 margin: 0;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                background: rgba(0, 0, 0, .4);
             }
         }
     }

@@ -25,7 +25,7 @@ gulp.task('styles', function () {
 // build js
 gulp.task('scripts', function () {
     return gulp.src(['./src/libs/**/*.js', './src/main.js'])
-        //.pipe(babel())
+        // .pipe(babel())
         .pipe(concat('script.js'))
         .pipe(gulp.dest('dist'))
         .pipe(rename('script.min.js'))
