@@ -1,0 +1,32 @@
+{
+  "name": "nj-coder.com",
+  "version": "1.0.0",
+  "description": "nj-coder.com webpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nj-coder/nj-coder.com.git"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "css"
+  ],
+  "author": "Nidhin Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nj-coder/nj-coder.com/issues"
+  },
+  "homepage": "https://github.com/nj-coder/nj-coder.com#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
