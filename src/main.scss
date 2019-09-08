@@ -3,10 +3,46 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
+    color: #fff;
     background: #9D50BB;
     background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB) !important;
     background: linear-gradient(to right, #6E48AA, #9D50BB) !important;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+        .img-wrap {
+            border: 2px solid#fff;
+            background: #fff;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            outline: none;
+            overflow: hidden;
+            background: url(assets/images/dp.jpeg);
+            background-size: cover;
+            background-position-x: center;
+        }
+    }
+
+    .typewriter {
+        font-size: 2em;
+        margin-top: 1em;
+        text-align: center;
+
+        small {
+            font-size: 60%;
+        }
+    }
 }
