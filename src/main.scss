@@ -1,6 +1,12 @@
+html,
 body {
+    height: 100%;
+    width: 100%;
     margin: 0;
+}
+
+body {
     background: #9D50BB;
-    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
-    background: linear-gradient(to right, #6E48AA, #9D50BB);
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB) !important;
+    background: linear-gradient(to right, #6E48AA, #9D50BB) !important;
 }
