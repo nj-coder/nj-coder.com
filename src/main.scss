@@ -22,18 +22,17 @@ body {
     justify-content: center;
 
     .image {
-        .img-wrap {
-            border: 2px solid#fff;
-            background: #fff;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            outline: none;
-            overflow: hidden;
-            background: url(assets/images/dp.jpeg);
-            background-size: cover;
-            background-position-x: center;
-        }
+        border: 2px solid#fff;
+        background: #fff;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        outline: none;
+        overflow: hidden;
+        background: url(assets/images/dp.jpeg);
+        background-size: cover;
+        background-position-x: center;
+        margin: 0 auto;
     }
 
     .typewriter {
@@ -43,6 +42,28 @@ body {
 
         small {
             font-size: 60%;
+        }
+    }
+
+    .links {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        padding: 1em;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+
+        .link-wrap {
+            padding: 0.5em 1em;
+            background: rgba(0, 0, 0, .1);
+            border-radius: 7px;
+            margin-right: 1em;
+
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 }
