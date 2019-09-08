@@ -14,6 +14,6 @@
 
     setTimeout(function () {
         document.querySelector('.links').style.bottom = '-0px';
-    }, 5000);
+    }, 6000);
 
 })();
