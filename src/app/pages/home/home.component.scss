@@ -1,70 +1,55 @@
+$shadow-primary: #6E48AA;
+$shadow-secondary: #9D50BB;
+
 .home {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: #9D50BB;
-  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB) !important;
-  background: linear-gradient(to right, #6E48AA, #9D50BB) !important;
 
-  .container {
-    .image {
-      border: 2px solid#fff;
-      background: #fff;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      outline: none;
-      overflow: hidden;
-      background: url(../../../assets/images/dp.jpeg);
-      background-size: cover;
-      background-position-x: center;
-      margin: 0 auto;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    }
+  .top-section {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background: $shadow-secondary;
+    background: linear-gradient(to right, $shadow-primary, $shadow-primary);
+    display: grid;
+    grid-template-columns: 30% 70%;
 
-    .typewriter {
-      font-size: 2em;
-      margin-top: 1em;
-      text-align: center;
-
-      small {
-        font-size: 60%;
-      }
-    }
-
-    .links {
-      position: fixed;
-      width: 100%;
-      bottom: -50px;
-      padding: 1em;
-      text-align: center;
+    .left {
+      height: 100%;
       display: flex;
-      flex-flow: row;
-      justify-content: center;
-      transition: all 0.5s;
+      align-items: center;
 
-      .link-wrap {
-        padding: 0.5em 1em;
-        background: rgba(0, 0, 0, .2);
-        color: #fff;
-        border-radius: 7px;
-        margin-right: 1em;
-        transition: all 0.2s;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.1);
+      .outer-circle {
+        height: 50vh;
+        width: 50vh;
+        min-width: 50vh;
+        border-radius: 50%;
+        background: linear-gradient(to left, $shadow-primary, $shadow-primary);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        margin-left: 5vh;
+        border: 10px solid #ffffff;
+        overflow: visible;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        &:last-child {
-          margin: 0;
-        }
-
-        &:hover {
-          transform: scale(1.2);
-          background: rgba(0, 0, 0, .3);
+        .inner-circle {
+          height: 50%;
+          width: 50%;
+          border: 15px solid $shadow-primary;
+          border-radius: 50%;
+          background: #fff;
+          background: url('../../../assets/images/dp.jpeg');
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         }
       }
+    }
+
+    .right {
+      height: 98vh;
+      background: #fff;
     }
   }
+
 }
