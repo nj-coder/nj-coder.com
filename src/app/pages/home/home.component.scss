@@ -16,15 +16,17 @@ $shadow-secondary: #9D50BB;
       height: 100%;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
 
       .outer-circle {
+        position: relative;
+        left: 15vh;
         height: 50vh;
         width: 50vh;
         min-width: 50vh;
         border-radius: 50%;
         background: linear-gradient(to left, $shadow-primary, $shadow-primary);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        margin-left: 5vh;
         border: 10px solid #ffffff;
         overflow: visible;
         z-index: 10;
@@ -37,7 +39,6 @@ $shadow-secondary: #9D50BB;
           width: 50%;
           border: 15px solid $shadow-primary;
           border-radius: 50%;
-          background: #fff;
           background: url('../../../assets/images/dp.jpeg');
           background-size: cover;
           background-position: center;
