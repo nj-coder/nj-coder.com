@@ -1,7 +1,54 @@
-$shadow-primary: #6E48AA;
-$shadow-secondary: #9D50BB;
+$shadow-primary: #1e3c72;
+$shadow-secondary: #2a5298;
 
 .home {
+
+  .header {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    .left {
+      padding: 1em 1em 1em 2em;
+      text-align: left;
+      background: $shadow-primary;
+    }
+
+    .right {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10vw;
+
+      a {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 12px;
+        margin-right: 2em;
+        text-decoration: none;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &:hover:not(.hire-me) {
+          color: $shadow-secondary;
+          border-bottom: 1px solid $shadow-secondary;
+        }
+      }
+
+      .hire-me {
+        color: #ffffff;
+        background: linear-gradient(to right, $shadow-primary, $shadow-primary);
+        padding: 2px 12px;
+        border-radius: 12px;
+      }
+    }
+  }
 
   .top-section {
     height: 100vh;
@@ -10,7 +57,8 @@ $shadow-secondary: #9D50BB;
     background: $shadow-secondary;
     background: linear-gradient(to right, $shadow-primary, $shadow-primary);
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30vw 70vw;
+
 
     .left {
       height: 100%;
@@ -29,7 +77,7 @@ $shadow-secondary: #9D50BB;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         border: 10px solid #ffffff;
         overflow: visible;
-        z-index: 10;
+        z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
