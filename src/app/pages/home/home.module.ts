@@ -3,19 +3,17 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { FooterComponent } from '../footer/footer.component';
-
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', 
     component: HomeComponent
   }
 ];
 
 
 @NgModule({
-  declarations: [HomeComponent, FooterComponent],
+  declarations: [HomeComponent], 
   imports: [
     RouterModule.forChild(routes),
     CommonModule
