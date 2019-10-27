@@ -1,11 +1,22 @@
-<div class="timeline">
+<div class="timeline" id="timeline">
   <div class="timeline-item-wrapper">
-    <div class="timeline-item">
+    <div *ngFor="let item of timelineItems" class="timeline-item" [ngClass]="{'project': item.type == 'project', 
+    'education': item.type == 'education'}">
       <div class="item-head">
-          header
+        <span [ngSwitch]="item.type">
+          <span *ngSwitchCase="'education'">Education</span>
+          <span *ngSwitchCase="'project'">Project</span>
+          <span *ngSwitchDefault>Position</span>
+        </span>
       </div>
       <div class="item-content">
-          content
+        content
+      </div>
+      <div class="side-el">
+        <div class="arrow"></div>
+        <div class="circle">
+          <i class="fab fa-facebook-square"></i>
+        </div>
       </div>
     </div>
   </div>

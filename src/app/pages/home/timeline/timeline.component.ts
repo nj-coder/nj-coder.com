@@ -6,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-  timelineItems = [{
 
+  timelineItems = [{
+    type: 'position'
+  }, {
+    type: 'project',
+    subtype: 'opensource'
+  }, {
+    type: 'education'
   }];
+
   constructor() { }
 
   ngOnInit() {
