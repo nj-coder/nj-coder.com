@@ -9,7 +9,7 @@
     left: 50%;
     width: 1px;
     height: 100%;
-    background: red;
+    background: var(--app-grey);
   }
 
   .timeline-item-wrapper {
@@ -42,6 +42,10 @@
           left: -10px;
           clip-path: polygon(0 50%, 100% 0, 100% 100%);
         }
+      }
+
+      &.position {
+        border-top: 2px solid red;
       }
 
       .item-head {
