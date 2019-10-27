@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [HomeComponent], 
+  declarations: [HomeComponent, TimelineComponent], 
   imports: [
     RouterModule.forChild(routes),
     CommonModule
