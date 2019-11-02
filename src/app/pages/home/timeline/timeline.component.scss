@@ -1,14 +1,14 @@
-.timeline { 
-  margin: 2em auto;
+.timeline {
+  margin: 4em auto;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: -2em;
+    top: -4em;
     left: 50%;
     width: 1px;
-    height: calc(100% - 2em);
+    height: calc(100%);
     background: var(--app-grey);
   }
 
@@ -47,10 +47,52 @@
         padding-bottom: 0.5em;
         font-size: 80%;
         color: #6a737c;
+
+        .item-type {
+          font-weight: bold;
+        }
+
+        .timeperiod {
+          margin-left: 4px;
+        }
       }
 
       .item-content {
         padding-top: 0.5em;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-gap: 1em;
+
+        .details {
+          .heading {
+            font-weight: bold;
+
+            a {
+              text-decoration: none;
+            }
+          }
+
+          .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-top: 0.5em;
+
+            .badge {
+              color: var(--primary);
+              background-color: #E1ECF4;
+              font-size: 12px;
+              padding: 2px 6px;
+              border-radius: 3px;
+              text-align: center;
+              margin: 0 4px 4px 0;
+            }
+          }
+
+          .description {
+            padding-top: calc(0.5em - 4px);
+          }
+        }
       }
 
       .side-el {

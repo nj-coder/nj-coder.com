@@ -8,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class TimelineComponent implements OnInit {
 
   timelineItems = [{
-    type: 'position'
+    type: 'position',
+    company: {
+      name: '152HQ',
+      link: 'https://www.152hq.com/wp/',
+      title: 'Senior Front-end Developer'
+    },
+    techs: ['Angular', 'Ionic', 'AngularJS', 'Cordova'],
+    startDate: '07-07-2017',
+    endDate: 'current',
+    itemImage: ''
   }, {
     type: 'project',
     subtype: 'opensource'

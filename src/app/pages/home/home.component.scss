@@ -172,15 +172,22 @@
 
     .tech-stack {
       text-align: center;
-      
-      .badge {
-        color: var(--primary);
-        background-color: #E1ECF4;
-        font-size: 12px;
-        padding: 2px 6px;
-        border-radius: 3px;
+
+      .badge-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+        grid-gap: 4px;
+        justify-content: center;
+
+        .badge {
+          color: var(--primary);
+          background-color: #E1ECF4;
+          font-size: 12px;
+          padding: 2px 6px;
+          border-radius: 3px;
+        }
       }
-      
+
       &:after {
         content: "";
         border-bottom: 2px solid var(--app-grey);
