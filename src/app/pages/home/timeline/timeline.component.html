@@ -10,11 +10,11 @@
         </span>
         <span>&#x2666;</span>
         <span class="timeperiod">
-          <span *ngIf="item.startDate">{{ item.startDate | date:'MMM, y'}}</span>
+          <span *ngIf="item.startDate">{{ item.startDate | date:'MMM y'}}</span>
           <span [ngSwitch]="item.endDate">
             <span *ngSwitchCase="'current'"> &#x2799; Current</span>
             <span *ngSwitchDefault>
-              <span *ngIf="item.endDate"> &#x2799; {{ item.endDate | date:'MMM, y'}}</span>
+              <span *ngIf="item.endDate"> &#x2799; {{ item.endDate | date:'MMM y'}}</span>
             </span>
           </span>
         </span>
@@ -31,6 +31,9 @@
             <div *ngIf="item.project">
               <a [href]="item.project.link" target="_blank">{{ item.project.title }}</a>
             </div>
+            <div *ngIf="item.education">
+                <a [href]="item.education.link" target="_blank">{{ item.education.title }}</a>
+              </div>
           </div>
 
           <div class="description" *ngIf="item.description">
