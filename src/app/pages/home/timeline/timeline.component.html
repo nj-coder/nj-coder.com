@@ -8,28 +8,41 @@
           <span *ngSwitchCase="'project'">Project</span>
           <span *ngSwitchDefault>Position</span>
         </span>
+        <span>&#x2666;</span>
         <span class="timeperiod">
           <span *ngIf="item.startDate">{{ item.startDate | date:'MMM, y'}}</span>
           <span [ngSwitch]="item.endDate">
-            <span *ngSwitchCase="'current'"> - Current</span>
+            <span *ngSwitchCase="'current'"> &#x2799; Current</span>
             <span *ngSwitchDefault>
-              <span *ngIf="item.endDate"> - {{ item.endDate | date:'MMM, y'}}</span>
+              <span *ngIf="item.endDate"> &#x2799; {{ item.endDate | date:'MMM, y'}}</span>
             </span>
           </span>
         </span>
       </div>
       <div class="item-content">
-        <div class="image"></div>
+        <div class="image">
+          <img [src]="item.itemImage" alt="">
+        </div>
         <div class="details">
-          <div class="heading" *ngIf="item.company">
-            {{ item.company.title }} <a [href]="item.company.link" target="_blank">{{ item.company.name }}</a>
+          <div class="heading">
+            <div *ngIf="item.company">
+              {{ item.company.title }} <a [href]="item.company.link" target="_blank">{{ item.company.name }}</a>
+            </div>
+            <div *ngIf="item.project">
+              <a [href]="item.project.link" target="_blank">{{ item.project.title }}</a>
+            </div>
           </div>
+
+          <div class="description" *ngIf="item.description">
+            {{ item.description }}
+          </div>
+
           <div class="tech-stack" *ngIf="item.techs && item.techs.length > 0">
             <span class="badge" *ngFor="let tech of item.techs">
               {{ tech }}
             </span>
           </div>
-          <div class="description" *ngIf="item.description"></div>
+
         </div>
       </div>
       <div class="side-el">

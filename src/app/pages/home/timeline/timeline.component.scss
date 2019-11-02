@@ -18,6 +18,7 @@
     .timeline-item {
       box-sizing: border-box;
       padding: 1em;
+      padding-bottom: calc(1em - 4px); // to accomodate badge margin bottom
       margin-bottom: 1em;
       border-radius: 2px;
       max-width: calc(50% - 2em);
@@ -50,6 +51,7 @@
 
         .item-type {
           font-weight: bold;
+          margin-right: 4px;
         }
 
         .timeperiod {
@@ -63,12 +65,19 @@
         grid-template-columns: 50px 1fr;
         grid-gap: 1em;
 
+        .image {
+          img {
+            max-width: 100%;
+          }
+        }
+
         .details {
           .heading {
             font-weight: bold;
 
             a {
               text-decoration: none;
+              color: var(--primary);
             }
           }
 
@@ -76,7 +85,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            padding-top: 0.5em;
 
             .badge {
               color: var(--primary);
@@ -90,7 +98,8 @@
           }
 
           .description {
-            padding-top: calc(0.5em - 4px);
+            font-size: 80%;
+            padding: 1em 0;
           }
         }
       }
