@@ -1,15 +1,14 @@
-.timeline {
-  width: 80vw;
+.timeline { 
   margin: 2em auto;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 1em;
+    top: -2em;
     left: 50%;
     width: 1px;
-    height: calc(100% - 4em);
+    height: calc(100% - 2em);
     background: var(--app-grey);
   }
 
