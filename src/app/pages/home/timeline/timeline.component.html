@@ -1,7 +1,7 @@
 <div class="timeline" id="timeline">
   <div class="timeline-item-wrapper">
     <div *ngFor="let item of timelineItems" class="timeline-item" [ngClass]="{'project': item.type == 'project', 
-    'education': item.type == 'education'}">
+    'education': item.type == 'education', 'position': item.type == 'position'}">
       <div class="item-head">
         <span [ngSwitch]="item.type" class="item-type">
           <span *ngSwitchCase="'education'">Education</span>
@@ -32,8 +32,8 @@
               <a [href]="item.project.link" target="_blank">{{ item.project.title }}</a>
             </div>
             <div *ngIf="item.education">
-                <a [href]="item.education.link" target="_blank">{{ item.education.title }}</a>
-              </div>
+              <a [href]="item.education.link" target="_blank">{{ item.education.title }}</a>
+            </div>
           </div>
 
           <div class="description" *ngIf="item.description">
@@ -50,8 +50,11 @@
       </div>
       <div class="side-el">
         <div class="arrow"></div>
-        <div class="circle">
-          <i class="fab fa-facebook-square"></i>
+        <div class="circle"> 
+          <i class="fal"
+          [ngClass]="{'fa-rocket': item.type == 'project', 
+    'fa-university': item.type == 'education', 'fa-briefcase': item.type == 'position'}"
+          ></i>
         </div>
       </div>
     </div>
