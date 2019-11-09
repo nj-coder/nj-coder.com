@@ -94,6 +94,16 @@ export class TimelineService {
       techs: ['Android', 'AngularJS', 'ExtJS', 'Cordova'],
       itemImage: 'assets/images/tcs.png'
     }, {
+      type: 'project',
+      startDate: '06-01-2016',
+      description: `Portal for Nielsen panelists to monitor and control their accounts with Nielsen.`,
+      project: {
+        title: 'Nielsen Panelist Portal',
+        link: 'https://family.nielsen.com/PanelistPortal/#!login'
+      },
+      techs: ['ExtJS', 'HTML', 'CSS', 'JavaScript'],
+      itemImage: 'assets/images/nielsen.png'
+    }, {
       type: 'education',
       startDate: '07-01-2010',
       endDate: '07-01-2014',
