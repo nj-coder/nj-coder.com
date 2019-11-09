@@ -31,16 +31,46 @@ export class TimelineService {
       },
       techs: ['JavaScript', 'SASS', 'Gulp'],
       itemImage: 'assets/images/github.png'
-    },{
+    }, {
       type: 'project',
       startDate: '08-01-2019',
       description: `QicWorks is the answer, providing the latest in digital Job Management.`,
       project: {
         title: 'QicWorks - Job Management Software',
-        link: 'https://github.com/nj-coder/nj-timepicker'
+        link: 'https://qicworks.com/'
       },
       techs: ['MS .NET', 'AngularJS', 'Cordova'],
       itemImage: 'assets/images/qicworks.jpg'
+    }, {
+      type: 'project',
+      startDate: '03-01-2019',
+      description: `QicWorks is a one platform for all your forms, workflows and data processing.`,
+      project: {
+        title: 'QicForms - Dynamic form builder & data collection',
+        link: 'https://qicforms.com/'
+      },
+      techs: ['MS .NET', 'AngularJS', 'Cordova'],
+      itemImage: 'assets/images/qicforms.jpg'
+    }, {
+      type: 'project',
+      startDate: '08-01-2018',
+      description: `Packed with safety features, Safe-halo provides employers with a cost effective way of monitoring their staff's safety status and location.`,
+      project: {
+        title: 'Safehalo - lone workers safety',
+        link: 'https://www.safe-halo.net/'
+      },
+      techs: ['MS .NET', 'AngularJS', 'Cordova'],
+      itemImage: 'assets/images/safehalo.png'
+    }, {
+      type: 'project',
+      startDate: '05-01-2018',
+      description: `Take2’s are designed to make us all STOP and THINK before we commence our tasks.`,
+      project: {
+        title: 'Take2 - Stop and Take Two Minutes for Safety',
+        link: 'http://take2.live/'
+      },
+      techs: ['MS .NET', 'AngularJS', 'Cordova'],
+      itemImage: 'assets/images/take2.png'
     }, {
       type: 'education',
       startDate: '02-01-2017',
