@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { TimelineComponent } from './timeline/timeline.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
   declarations: [HomeComponent, TimelineComponent, FooterComponent], 
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    FormsModule,
   ]
 })
 export class HomeModule { }

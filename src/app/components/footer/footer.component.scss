@@ -10,7 +10,7 @@
     margin: 1em auto;
 
     .details {
-      margin-right: 2em;
+      margin-right: 1em;
       flex-grow: 1;
       flex-basis: 0;
       text-align: center;
@@ -69,6 +69,13 @@
     .hire-me {
       flex-grow: 1;
       flex-basis: 0;
+      padding-left: 1em;
+      border-left: 1px solid #797979;
+
+      h4 {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
     }
   }
 }

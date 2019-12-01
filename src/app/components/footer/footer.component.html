@@ -30,7 +30,24 @@
     </div>
 
     <div class="hire-me">
-      4
+      <h4>
+        CONTACT ME
+      </h4>
+      <form #contactMe="ngForm" (ngSubmit)="contactSubmission(contactMe)">
+        <div class="form-field-wrapper">
+          <label>Name</label>
+          <input type="text" class="form-field" name="name" ngModel required #name="ngModel">
+        </div>
+        <div class="form-field-wrapper">
+          <label>Email/Phone</label>
+          <input type="text" class="form-field" name="contact" ngModel required #contact="ngModel">
+        </div>
+        <div class="form-field-wrapper">
+          <label>Message</label>
+          <textarea class="form-field" name="message" ngModel required #message="ngModel"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
 
   </div>

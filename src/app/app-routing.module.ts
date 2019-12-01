@@ -3,8 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', loadChildren: './pages/home/home.module#HomeModule' },
-  { path: 'njtimepicker', loadChildren: './pages/nj-timepicker/nj-timepicker.module#NjTimepickerModule' },
+  {
+    path: '',
+    loadChildren: './pages/home/home.module#HomeModule'
+  },
+  {
+    path: 'njtimepicker',
+    loadChildren: './pages/nj-timepicker/nj-timepicker.module#NjTimepickerModule'
+  },
 ];
 
 @NgModule({
