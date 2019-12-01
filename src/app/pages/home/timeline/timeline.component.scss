@@ -1,3 +1,5 @@
+$primary-breakpoint: 800px;
+
 .timeline {
   margin: 4em auto;
   position: relative;
@@ -10,7 +12,13 @@
     width: 1px;
     height: calc(100% - 2em);
     background: var(--app-grey);
+
+    @media only screen and (max-width: $primary-breakpoint) {
+      left: calc(90% + 2em);
+    }
   }
+
+
 
   .timeline-item-wrapper {
     margin-bottom: 1em;
@@ -135,23 +143,31 @@
 
       }
 
-      &:nth-child(even) {
-        margin-left: auto;
+      @media only screen and (max-width: $primary-breakpoint) {
+        max-width: calc(90%);
+        margin-bottom: 4em;
+      }
 
-        .side-el {
-          right: auto;
-          left: -50px;
+      @media only screen and (min-width: $primary-breakpoint) {
 
-          .arrow {
-            order: 1;
+        &:nth-child(even) {
+          margin-left: auto;
+
+          .side-el {
             right: auto;
-            left: -10px;
-            clip-path: polygon(0 50%, 100% 0, 100% 100%);
-          }
+            left: -50px;
 
-          .circle {
-            margin-left: 0;
-            margin-right: 0.5em;
+            .arrow {
+              order: 1;
+              right: auto;
+              left: -10px;
+              clip-path: polygon(0 50%, 100% 0, 100% 100%);
+            }
+
+            .circle {
+              margin-left: 0;
+              margin-right: 0.5em;
+            }
           }
         }
       }

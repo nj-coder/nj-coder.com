@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { FooterComponent } from 'src/app/components/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent], 
+  declarations: [HomeComponent, TimelineComponent, FooterComponent], 
   imports: [
     RouterModule.forChild(routes),
     CommonModule
