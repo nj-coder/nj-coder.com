@@ -1,15 +1,74 @@
 .footer {
   padding: 1em;
   background: #021017;
+  color: #fff;
 
-  .get-template {
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
- 
-    a {
-      text-decoration-color: #fff;
-      color: #fff;
+  .content {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: 1em auto;
+
+    .details {
+      margin-right: 2em;
+      flex-grow: 1;
+      flex-basis: 0;
+      text-align: center;
+
+      .title {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+
+      .socials {
+        text-align: center;
+        position: relative;
+        margin-bottom: 2em;
+
+        .links {
+          padding: 0 4px;
+          position: relative;
+          display: inline-flex;
+
+          a {
+            padding: .5em 1em;
+            background: #fff;
+            display: block;
+            color: #021017;
+            border-radius: 7px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+            margin-right: 1em;
+
+            &:last-child {
+              margin: 0;
+            }
+
+            &:hover {
+              color: #fff;
+              background: var(--primary);
+            }
+          }
+        }
+      }
+
+      .get-template {
+        font-size: 12px;
+        color: #797979;
+
+        a {
+          text-decoration-color: #797979;
+          color: #797979;
+        }
+      }
+    }
+
+    .hire-me {
+      flex-grow: 1;
+      flex-basis: 0;
     }
   }
 }
