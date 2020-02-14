@@ -5,11 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './pages/home/home.module#HomeModule'
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'njtimepicker',
-    loadChildren: './pages/nj-timepicker/nj-timepicker.module#NjTimepickerModule'
+    loadChildren: () => import('./pages/nj-timepicker/nj-timepicker.module').then(m => m.NjTimepickerModule)
   },
 ];
 
